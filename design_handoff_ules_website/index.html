@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ules — Rescue food. Save money.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ─── NAVIGATION ─────────────────────────────────────────────── -->
+<header class="nav" data-screen-label="01 Nav">
+  <a class="nav-brand" href="#top">
+    <svg class="logo" width="32" height="32" viewBox="0 0 100 100" fill="none" aria-hidden="true">
+      <rect width="100" height="100" rx="22" fill="#4BBDE8" />
+      <circle cx="37" cy="22" r="7" fill="white" />
+      <circle cx="63" cy="22" r="7" fill="white" />
+      <path d="M25 36 L25 63 Q25 80 50 80 Q75 80 75 63 L75 36" stroke="white" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+    </svg>
+    <span class="brand-word">ules</span>
+  </a>
+  <nav class="nav-links">
+    <a href="#mission">Mission</a>
+    <a href="#features">Features</a>
+    <a href="#gallery">App</a>
+    <a href="#business">For business</a>
+    <a href="#team">Team</a>
+  </nav>
+  <div class="nav-right">
+    <div class="lang-switch" role="group" aria-label="Language">
+      <button data-lang="EN" class="active" type="button">EN</button>
+      <button data-lang="RU" type="button">RU</button>
+      <button data-lang="KZ" type="button">KZ</button>
+    </div>
+  </div>
+</header>
+
+<!-- ─── HERO ──────────────────────────────────────────────────── -->
+<section class="hero" id="top" data-screen-label="02 Hero">
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <div class="kicker">
+        <span class="kicker-dot"></span>
+        A food-rescue app from Kazakhstan
+      </div>
+      <h1>
+        Good food.<br />
+        <span class="accent">Rescued daily.</span>
+      </h1>
+      <p class="lede">
+        Local restaurants in Astana and Almaty cook more than they sell. Ules lets you pick it up at the end of the day — at up to 70% off — instead of letting it go to waste.
+      </p>
+      <div class="hero-meta">
+        <div class="hero-meta-item">
+          <span class="hero-meta-num">70%</span>
+          <span class="hero-meta-label">off menu prices</span>
+        </div>
+        <div class="hero-divider"></div>
+        <div class="hero-meta-item">
+          <span class="hero-meta-num">3</span>
+          <span class="hero-meta-label">languages: KZ · RU · EN</span>
+        </div>
+        <div class="hero-divider"></div>
+        <div class="hero-meta-item">
+          <span class="hero-meta-num">iOS</span>
+          <span class="hero-meta-label">+ Android, soon</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Abstracted phone mockup -->
+    <div class="hero-phone-wrap">
+      <div class="phone phone-tilt">
+        <div class="phone-notch"></div>
+        <div class="phone-screen">
+          <div class="ps-row ps-row-tight">
+            <div class="ps-pill" style="width:62%"></div>
+            <div class="ps-chev"></div>
+          </div>
+          <div class="ps-chips">
+            <div class="ps-chip ps-chip-on">All</div>
+            <div class="ps-chip">Sweet</div>
+            <div class="ps-chip">Salty</div>
+          </div>
+          <div class="ps-h">Top picks near you</div>
+          <div class="ps-card">
+            <div class="ps-card-img">
+              <span class="ps-badge ps-badge-orange">7 left</span>
+              <span class="ps-heart"></span>
+              <div class="ps-resto">
+                <div class="ps-resto-avatar"></div>
+                <div class="ps-resto-name"></div>
+              </div>
+            </div>
+            <div class="ps-card-body">
+              <div class="ps-line ps-line-strong" style="width:65%"></div>
+              <div class="ps-line" style="width:45%"></div>
+              <div class="ps-card-foot">
+                <div class="ps-rating">
+                  <span class="ps-star"></span>
+                  <span class="ps-line ps-line-strong" style="width:24px"></span>
+                </div>
+                <div class="ps-price">₸800</div>
+              </div>
+            </div>
+          </div>
+          <div class="ps-dots">
+            <div class="ps-dot ps-dot-on"></div>
+            <div class="ps-dot"></div>
+            <div class="ps-dot"></div>
+            <div class="ps-dot"></div>
+          </div>
+        </div>
+        <div class="phone-tabbar">
+          <div class="phone-tab phone-tab-on"></div>
+          <div class="phone-tab"></div>
+          <div class="phone-tab"></div>
+          <div class="phone-tab"></div>
+        </div>
+      </div>
+      <div class="phone-float phone-float-sm">
+        <div class="pf-cap"></div>
+        <div class="pf-row">
+          <div class="pf-leaf"></div>
+          <div>
+            <div class="pf-strong">≈7 meals saved</div>
+            <div class="pf-weak">this week</div>
+          </div>
+        </div>
+      </div>
+      <div class="phone-float phone-float-md">
+        <div class="pf-row">
+          <div class="pf-bag"></div>
+          <div>
+            <div class="pf-strong">Closing soon</div>
+            <div class="pf-weak">3 bags · Nomad Grill</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── MISSION ─────────────────────────────────────────────── -->
+<section class="mission" id="mission" data-screen-label="03 Mission">
+  <div class="section-wrap">
+    <div class="mission-head">
+      <div class="eyebrow">Our mission</div>
+      <h2>One in three meals never gets eaten.<br /><span class="muted">We think that's worth fixing.</span></h2>
+    </div>
+    <div class="mission-grid">
+      <p class="mission-lede">
+        Ules started in Astana with a small idea: restaurants throw away perfectly good food at the end of every day, and people would happily eat it for a fraction of the price. The catch was always logistics — how do you connect them, fast?
+      </p>
+      <p class="mission-lede">
+        So we built an app. Restaurants list what's left. You see what's near you, reserve a bag, and pick it up before they close. Everyone saves something — money, food, a little carbon. It's a small loop, but it adds up.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ─── TWO AUDIENCES ─────────────────────────────────────────── -->
+<section class="audiences" id="audiences" data-screen-label="04 Audiences">
+  <div class="section-wrap">
+    <div class="aud-grid">
+      <article class="aud-card aud-card-consumer">
+        <div class="aud-tag">For people</div>
+        <h3>Find dinner. Save the planet a little.</h3>
+        <p>Open the app, see what nearby restaurants have rescued today, pick a bag, and walk over to collect it. You usually pay between ₸600 and ₸2,000 for food that originally cost two or three times that.</p>
+        <ul class="aud-list">
+          <li><span class="aud-dot"></span> Browse rescue bags near you</li>
+          <li><span class="aud-dot"></span> See exactly when to collect</li>
+          <li><span class="aud-dot"></span> Track your impact over time</li>
+          <li><span class="aud-dot"></span> Pay in-app, show the receipt at pickup</li>
+        </ul>
+      </article>
+
+      <article class="aud-card aud-card-business">
+        <div class="aud-tag aud-tag-business">For restaurants</div>
+        <h3>Turn surplus into revenue.</h3>
+        <p>Listing takes a minute. List a bag, set a pickup window, and you'll have people walking through your door for food you would have thrown out. We handle payment and customer comms.</p>
+        <ul class="aud-list">
+          <li><span class="aud-dot aud-dot-business"></span> List bags in seconds</li>
+          <li><span class="aud-dot aud-dot-business"></span> Dashboard with daily revenue + reviews</li>
+          <li><span class="aud-dot aud-dot-business"></span> Direct payouts in Tenge</li>
+          <li><span class="aud-dot aud-dot-business"></span> No upfront cost — we take a small fee per bag</li>
+        </ul>
+        <a href="business.html" class="aud-link">Learn more about the business side →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FEATURES SHOWCASE ─────────────────────────────────────── -->
+<section class="features" id="features" data-screen-label="05 Features">
+  <div class="section-wrap">
+    <div class="section-head">
+      <div class="eyebrow">In the app</div>
+      <h2>Designed for the way people actually shop for food.</h2>
+    </div>
+
+    <div class="feat-row">
+      <div class="feat-copy">
+        <div class="feat-num">01</div>
+        <h3>See what's near you, right now</h3>
+        <p>The home feed shows what's available today, sorted by distance and pickup window. Closing-soon bags are flagged so you don't miss them.</p>
+        <ul class="feat-points">
+          <li>Filters for sweet, salty, or both</li>
+          <li>Map and list view</li>
+          <li>Pin restaurants you love</li>
+        </ul>
+      </div>
+      <div class="feat-mock">
+        <div class="phone phone-static">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <div class="ps-search">
+              <div class="ps-mag"></div>
+              <div class="ps-line" style="width:55%"></div>
+            </div>
+            <div class="ps-toggle">
+              <div class="ps-toggle-on">Map</div>
+              <div class="ps-toggle-off">List</div>
+            </div>
+            <div class="ps-map">
+              <div class="ps-map-grid"></div>
+              <div class="ps-pin" style="left:24%;top:30%"><span>Baursak House ₸800</span></div>
+              <div class="ps-pin" style="left:48%;top:50%"><span>Silk Road ₸1,200</span><span class="ps-pin-dot"></span></div>
+              <div class="ps-pin" style="left:30%;top:72%"><span>Nomad ₸1,800</span></div>
+            </div>
+          </div>
+          <div class="phone-tabbar">
+            <div class="phone-tab"></div>
+            <div class="phone-tab phone-tab-on"></div>
+            <div class="phone-tab"></div>
+            <div class="phone-tab"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="feat-row feat-row-reverse">
+      <div class="feat-copy">
+        <div class="feat-num">02</div>
+        <h3>Know exactly what you're getting</h3>
+        <p>Every bag has a clear pickup window, location, and collection instructions. No mystery about where to go or when.</p>
+        <ul class="feat-points">
+          <li>Pickup windows in plain language</li>
+          <li>One-tap directions to the store</li>
+          <li>Tap-and-hold to save for later</li>
+        </ul>
+      </div>
+      <div class="feat-mock">
+        <div class="phone phone-static">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <div class="ps-hero">
+              <span class="ps-back"></span>
+              <span class="ps-heart-circle"></span>
+              <span class="ps-badge ps-badge-orange ps-badge-low">7 left</span>
+              <div class="ps-resto ps-resto-detail">
+                <div class="ps-resto-avatar"></div>
+                <div class="ps-resto-name"></div>
+              </div>
+            </div>
+            <div class="ps-detail-body">
+              <div class="ps-rating-row">
+                <span class="ps-star"></span>
+                <div class="ps-line ps-line-strong" style="width:32px"></div>
+                <div class="ps-line" style="width:64px;margin-left:auto"></div>
+              </div>
+              <div class="ps-h">About Ules box</div>
+              <div class="ps-line" style="width:90%"></div>
+              <div class="ps-line" style="width:75%"></div>
+              <div class="ps-tip">
+                <span class="ps-tip-i"></span>
+                <div>
+                  <div class="ps-line ps-line-strong" style="width:60px"></div>
+                  <div class="ps-line" style="width:130px"></div>
+                </div>
+              </div>
+              <div class="ps-cta-row">
+                <div class="ps-line" style="width:40px"></div>
+                <div class="ps-cta">Add to cart</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="feat-row">
+      <div class="feat-copy">
+        <div class="feat-num">03</div>
+        <h3>Track what you've actually saved</h3>
+        <p>Every bag you collect adds up — meals rescued, tenge saved, grocery trips skipped. Set your own goals and watch them tick up.</p>
+        <ul class="feat-points">
+          <li>Set monthly savings goals</li>
+          <li>Visual progress, no spreadsheets</li>
+          <li>Order history with one-tap receipts</li>
+        </ul>
+      </div>
+      <div class="feat-mock">
+        <div class="phone phone-static">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <div class="ps-h ps-h-big">Settings</div>
+            <div class="ps-stat-row">
+              <div class="ps-stat-card ps-stat-green">
+                <div class="ps-stat-title">🥕 Food saved</div>
+                <div class="ps-ring">
+                  <svg viewBox="0 0 60 60" width="100%" height="100%">
+                    <circle cx="30" cy="30" r="24" fill="none" stroke="#E5E7EB" stroke-width="6" />
+                    <circle cx="30" cy="30" r="24" fill="none" stroke="#22C55E" stroke-width="6" stroke-dasharray="120 152" stroke-linecap="round" transform="rotate(-90 30 30)" />
+                  </svg>
+                  <div class="ps-ring-num">62 kg</div>
+                </div>
+                <div class="ps-stat-sub"><span class="ps-stat-emph">≈124</span> meals saved</div>
+              </div>
+              <div class="ps-stat-card ps-stat-blue">
+                <div class="ps-stat-title">💸 Money saved</div>
+                <div class="ps-big-num">₸20,000</div>
+                <div class="ps-stat-sub">≈2 grocery trips</div>
+                <div class="ps-bar"><div class="ps-bar-fill" style="width:30%"><span>7%</span></div></div>
+                <div class="ps-stat-foot">of your ₸295,000 goal</div>
+              </div>
+            </div>
+            <div class="ps-user-row">
+              <div class="ps-avatar"></div>
+              <div>
+                <div class="ps-line ps-line-strong" style="width:90px"></div>
+                <div class="ps-line" style="width:140px"></div>
+              </div>
+            </div>
+          </div>
+          <div class="phone-tabbar">
+            <div class="phone-tab"></div>
+            <div class="phone-tab"></div>
+            <div class="phone-tab"></div>
+            <div class="phone-tab phone-tab-on"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── APP SCREENS GALLERY ───────────────────────────────────── -->
+<section class="gallery" id="gallery" data-screen-label="06 Gallery">
+  <div class="section-wrap">
+    <div class="section-head">
+      <div class="eyebrow">App tour</div>
+      <h2>A quick look around.</h2>
+      <p class="section-lede">Eleven of the most-visited screens, abstracted. The real app uses photos and live data.</p>
+    </div>
+    <div class="gallery-strip">
+      <!-- 6 abstracted phones repeating common app screens -->
+      <div class="g-phone">
+        <div class="g-label">Onboarding</div>
+        <div class="phone phone-mini">
+          <div class="phone-notch phone-notch-sm"></div>
+          <div class="phone-screen phone-screen-onb">
+            <div class="onb-circle"><span>🥡</span></div>
+            <div class="ps-line ps-line-strong" style="width:55%;margin:14px auto 6px"></div>
+            <div class="ps-line" style="width:75%;margin:0 auto"></div>
+            <div class="ps-line" style="width:65%;margin:4px auto 0"></div>
+            <div class="onb-dots"><span class="on"></span><span></span><span></span></div>
+            <div class="onb-cta">Continue</div>
+          </div>
+        </div>
+      </div>
+      <div class="g-phone">
+        <div class="g-label">Login</div>
+        <div class="phone phone-mini">
+          <div class="phone-notch phone-notch-sm"></div>
+          <div class="phone-screen phone-screen-login">
+            <div class="login-logo">
+              <svg width="36" height="36" viewBox="0 0 100 100"><rect width="100" height="100" rx="22" fill="#4BBDE8" /><circle cx="37" cy="22" r="7" fill="white" /><circle cx="63" cy="22" r="7" fill="white" /><path d="M25 36 L25 63 Q25 80 50 80 Q75 80 75 63 L75 36" stroke="white" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none" /></svg>
+            </div>
+            <div class="ps-line ps-line-strong" style="width:60%;margin:14px auto 4px"></div>
+            <div class="ps-line" style="width:75%;margin:0 auto 16px"></div>
+            <div class="login-input"></div>
+            <div class="login-input"></div>
+            <div class="login-cta">Login</div>
+          </div>
+        </div>
+      </div>
+      <div class="g-phone">
+        <div class="g-label">Home</div>
+        <div class="phone phone-mini">
+          <div class="phone-notch phone-notch-sm"></div>
+          <div class="phone-screen">
+            <div class="ps-row ps-row-tight"><div class="ps-pill" style="width:62%"></div><div class="ps-chev"></div></div>
+            <div class="ps-chips ps-chips-sm">
+              <div class="ps-chip ps-chip-on">All</div>
+              <div class="ps-chip">Sweet</div>
+              <div class="ps-chip">Salty</div>
+            </div>
+            <div class="ps-h ps-h-sm">Top picks</div>
+            <div class="ps-card ps-card-sm">
+              <div class="ps-card-img ps-card-img-sm">
+                <span class="ps-badge ps-badge-orange ps-badge-tiny">7 left</span>
+              </div>
+              <div class="ps-card-body ps-card-body-sm">
+                <div class="ps-line ps-line-strong" style="width:65%"></div>
+                <div class="ps-line" style="width:45%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="g-phone">
+        <div class="g-label">Restaurant</div>
+        <div class="phone phone-mini">
+          <div class="phone-notch phone-notch-sm"></div>
+          <div class="phone-screen">
+            <div class="resto-id">
+              <div class="resto-avatar-lg"></div>
+              <div style="flex:1">
+                <div class="ps-line ps-line-strong" style="width:70%"></div>
+                <div class="ps-line" style="width:45%"></div>
+                <div class="ps-line" style="width:55%"></div>
+              </div>
+            </div>
+            <div class="resto-row">
+              <div class="resto-thumb"></div>
+              <div style="flex:1">
+                <div class="ps-line ps-line-strong" style="width:60%"></div>
+                <div class="ps-line" style="width:80%"></div>
+                <div class="ps-line" style="width:35%"></div>
+              </div>
+            </div>
+            <div class="resto-row resto-row-dim">
+              <div class="resto-thumb resto-thumb-dim"></div>
+              <div style="flex:1">
+                <div class="ps-line ps-line-strong" style="width:55%"></div>
+                <div class="ps-line" style="width:70%"></div>
+              </div>
+              <span class="ps-badge ps-badge-grey">Sold out</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="g-phone">
+        <div class="g-label">Cart</div>
+        <div class="phone phone-mini">
+          <div class="phone-notch phone-notch-sm"></div>
+          <div class="phone-screen">
+            <div class="ps-h ps-h-big-sm">Cart</div>
+            <div class="cart-resto">
+              <div class="cart-avatar"></div>
+              <div style="flex:1">
+                <div class="ps-line ps-line-strong" style="width:55%"></div>
+                <div class="ps-line" style="width:75%"></div>
+              </div>
+              <div class="ps-chev"></div>
+            </div>
+            <div class="cart-impact">
+              <div class="ps-line ps-line-green" style="width:35%"></div>
+              <div class="ps-line" style="width:60%"></div>
+              <div class="ps-line" style="width:55%"></div>
+            </div>
+            <div class="cart-row"><div class="ps-line" style="width:42%"></div><div class="ps-line ps-line-strong" style="width:18%"></div></div>
+            <div class="cart-row"><div class="ps-line" style="width:32%"></div><div class="ps-line ps-line-strong" style="width:18%"></div></div>
+            <div class="cart-total"><div class="ps-line ps-line-strong" style="width:22%"></div><div class="ps-line ps-line-strong ps-line-blue" style="width:22%"></div></div>
+            <div class="onb-cta cart-cta">Go to checkout</div>
+          </div>
+        </div>
+      </div>
+      <div class="g-phone">
+        <div class="g-label">Order paid</div>
+        <div class="phone phone-mini">
+          <div class="phone-notch phone-notch-sm"></div>
+          <div class="phone-screen phone-screen-center">
+            <div class="success-circle">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#22C55E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12" /></svg>
+            </div>
+            <div class="ps-line ps-line-strong" style="width:50%;margin:16px auto 6px"></div>
+            <div class="ps-line" style="width:75%;margin:0 auto"></div>
+            <div class="ps-line" style="width:60%;margin:4px auto 0"></div>
+            <div class="success-cta">View order history</div>
+            <div class="success-cta success-cta-ghost">Back to home</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FOR BUSINESS ──────────────────────────────────────────── -->
+<section class="biz" id="business" data-screen-label="07 Business">
+  <div class="section-wrap">
+    <div class="biz-grid">
+      <div class="biz-copy">
+        <div class="eyebrow eyebrow-light">For restaurants</div>
+        <h2>Are you a restaurant or café?</h2>
+        <p>If you cook fresh food daily and end up throwing some away, Ules can help. Set up takes about ten minutes. You decide what goes into each bag, how many, and when to collect.</p>
+        <p class="biz-soft">We're already partnered with bakeries, plov houses, grill spots, cafés, and small bistros across Astana and Almaty.</p>
+        <a href="business.html" class="biz-link">See the partner side →</a>
+      </div>
+      <div class="biz-mock">
+        <div class="biz-laptop">
+          <div class="biz-laptop-screen">
+            <div class="biz-header">
+              <div class="biz-loc">
+                <div class="ps-line ps-line-strong ps-line-blue" style="width:40px"></div>
+                <div class="ps-line ps-line-strong" style="width:65px"></div>
+              </div>
+              <div class="biz-avatar"></div>
+            </div>
+            <div class="biz-stat-grid">
+              <div class="biz-stat-card">
+                <div class="biz-stat-num">20</div>
+                <div class="biz-stat-label">Completed orders</div>
+              </div>
+              <div class="biz-stat-card">
+                <div class="biz-stat-num">05</div>
+                <div class="biz-stat-label">Order requests</div>
+              </div>
+            </div>
+            <div class="biz-rev-card">
+              <div class="biz-rev-head">
+                <div>
+                  <div class="ps-line" style="width:60px"></div>
+                  <div class="biz-rev-num">₸2,241</div>
+                </div>
+                <div class="biz-dd">Daily ▾</div>
+              </div>
+              <svg class="biz-chart" viewBox="0 0 200 60" preserveAspectRatio="none">
+                <path d="M0,40 C30,30 40,45 60,35 C80,25 100,32 130,22 C160,12 180,18 200,15" stroke="#4BBDE8" stroke-width="2.5" fill="none" stroke-linecap="round" />
+                <path d="M0,40 C30,30 40,45 60,35 C80,25 100,32 130,22 C160,12 180,18 200,15 L200,60 L0,60 Z" fill="url(#biz-grad)" />
+                <defs>
+                  <linearGradient id="biz-grad" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#4BBDE8" stop-opacity="0.18" />
+                    <stop offset="100%" stop-color="#4BBDE8" stop-opacity="0" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── TEAM ─────────────────────────────────────────────────── -->
+<section class="team" id="team" data-screen-label="08 Team">
+  <div class="section-wrap">
+    <div class="section-head">
+      <div class="eyebrow">Who's behind Ules</div>
+      <h2>A small team in Astana with one big goal.</h2>
+      <p class="section-lede">We're builders, designers, and food people. We started Ules because we kept watching good meals get thrown out at the end of the day, and felt it was a problem worth solving with software.</p>
+    </div>
+    <div class="team-grid">
+      <article class="team-card">
+        <div class="team-photo team-photo-1"><span class="team-init">T</span></div>
+        <div class="team-name">Timur R.</div>
+        <div class="team-role">Founder · Product</div>
+        <p class="team-bio">Spends too much time in restaurant kitchens asking what gets thrown out. Builds the roadmap.</p>
+      </article>
+      <article class="team-card">
+        <div class="team-photo team-photo-2"><span class="team-init">A</span></div>
+        <div class="team-name">Aizhan K.</div>
+        <div class="team-role">Engineering</div>
+        <p class="team-bio">Backend, infrastructure, and the maps that figure out which restaurants are within walking distance.</p>
+      </article>
+      <article class="team-card">
+        <div class="team-photo team-photo-3"><span class="team-init">D</span></div>
+        <div class="team-name">Dias N.</div>
+        <div class="team-role">Partnerships</div>
+        <p class="team-bio">Walks the streets of Astana and Almaty signing up restaurants. Knows where the best baursaks are.</p>
+      </article>
+      <article class="team-card">
+        <div class="team-photo team-photo-4"><span class="team-init">M</span></div>
+        <div class="team-name">Madina S.</div>
+        <div class="team-role">Design</div>
+        <p class="team-bio">Designs the app, makes sure new partners look great in the feed, draws the icons.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FOOTER ──────────────────────────────────────────────── -->
+<footer class="footer" data-screen-label="09 Footer">
+  <div class="section-wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="nav-brand" href="#top">
+          <svg class="logo" width="28" height="28" viewBox="0 0 100 100" fill="none">
+            <rect width="100" height="100" rx="22" fill="#4BBDE8" />
+            <circle cx="37" cy="22" r="7" fill="white" />
+            <circle cx="63" cy="22" r="7" fill="white" />
+            <path d="M25 36 L25 63 Q25 80 50 80 Q75 80 75 63 L75 36" stroke="white" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+          </svg>
+          <span class="brand-word">ules</span>
+        </a>
+        <p class="footer-soft">A food rescue app from Kazakhstan. Cooked in Astana, served everywhere.</p>
+      </div>
+      <div class="footer-col">
+        <div class="footer-h">Product</div>
+        <a href="#features">Features</a>
+        <a href="#gallery">App tour</a>
+        <a href="#mission">Mission</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-h">Partners</div>
+        <a href="business.html">For restaurants</a>
+        <a href="mailto:partners@ules.kz">partners@ules.kz</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-h">Contact</div>
+        <a href="mailto:hello@ules.kz">hello@ules.kz</a>
+        <a href="#team">Team</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-h">Legal</div>
+        <a href="#" title="Coming soon">Terms of Service</a>
+        <a href="#" title="Coming soon">Privacy Policy</a>
+        <a href="#" title="Coming soon">Payment &amp; Refund</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Ules. Made in Astana.</span>
+      <span class="footer-soft">Available in Қазақша · Русский · English</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Language switcher — visual only for now
+  document.querySelectorAll('.lang-switch button').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      document.querySelectorAll('.lang-switch button').forEach(function (b) { b.classList.remove('active'); });
+      btn.classList.add('active');
+    });
+  });
+
+  // Smooth-scroll on internal anchors
+  document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      var id = a.getAttribute('href');
+      if (id.length > 1) {
+        var el = document.querySelector(id);
+        if (el) {
+          e.preventDefault();
+          window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 70, behavior: 'smooth' });
+        }
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
