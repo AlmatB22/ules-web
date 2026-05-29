@@ -1,19 +1,8 @@
 'use client'
 
 import Link from 'next/link'
+import UlesLogo from '@/components/UlesLogo'
 import { useLanguage } from '@/context/LanguageContext'
-
-const UlesLogo = ({ size = 28 }: { size?: number }) => (
-  <svg width={size} height={size} viewBox="0 0 100 100" fill="none" aria-hidden="true">
-    <rect width="100" height="100" rx="22" fill="#4BBDE8" />
-    <circle cx="37" cy="22" r="7" fill="white" />
-    <circle cx="63" cy="22" r="7" fill="white" />
-    <path
-      d="M25 36 L25 63 Q25 80 50 80 Q75 80 75 63 L75 36"
-      stroke="white" strokeWidth="14" strokeLinecap="round" strokeLinejoin="round" fill="none"
-    />
-  </svg>
-)
 
 interface FooterProps {
   variant?: 'consumer' | 'business'
