@@ -42,7 +42,7 @@ export default function Nav({ variant = 'consumer' }: NavProps) {
     <div className="nav-wrapper">
       <header className="nav">
         <Link className="nav-brand" href={isBusiness ? '/' : '#top'}>
-          <img src="/ules-logo.png" alt="Ules" width={32} height={32} className="nav-logo" />
+          <img src="/ules-logo.png" alt="Ules" width={48} height={48} className="nav-logo" />
           <span className="brand-word">
             ules{isBusiness && <> <span className="brand-sub">/ business</span></>}
           </span>

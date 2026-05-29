@@ -18,7 +18,7 @@ export default function Footer({ variant = 'consumer' }: FooterProps) {
         <div className="footer-grid">
           <div>
             <Link className="nav-brand" href={isBusiness ? '/' : '#top'}>
-              <img src="/ules-logo.png" alt="Ules" width={28} height={28} className="nav-logo" />
+              <img src="/ules-logo.png" alt="Ules" width={40} height={40} className="nav-logo" />
               <span className="brand-word">ules</span>
             </Link>
             <p className="footer-soft">{f.tagline}</p>
