@@ -29,6 +29,8 @@ jobs:
           cache: npm
           cache-dependency-path: ules-website/package-lock.json
 
+      - run: npm install -g npm@11
+
       - run: npm ci
 
       - run: npm run build
