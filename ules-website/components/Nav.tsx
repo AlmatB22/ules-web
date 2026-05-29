@@ -2,7 +2,6 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import UlesLogo from '@/components/UlesLogo'
 import { useLanguage } from '@/context/LanguageContext'
 import type { Locale } from '@/lib/i18n'
 
@@ -43,7 +42,7 @@ export default function Nav({ variant = 'consumer' }: NavProps) {
     <div className="nav-wrapper">
       <header className="nav">
         <Link className="nav-brand" href={isBusiness ? '/' : '#top'}>
-          <UlesLogo size={32} />
+          <img src="/ules-logo.png" alt="Ules" width={32} height={32} className="nav-logo" />
           <span className="brand-word">
             ules{isBusiness && <> <span className="brand-sub">/ business</span></>}
           </span>

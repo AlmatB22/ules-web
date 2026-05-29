@@ -1,7 +1,6 @@
 'use client'
 
 import Link from 'next/link'
-import UlesLogo from '@/components/UlesLogo'
 import { useLanguage } from '@/context/LanguageContext'
 
 interface FooterProps {
@@ -19,7 +18,7 @@ export default function Footer({ variant = 'consumer' }: FooterProps) {
         <div className="footer-grid">
           <div>
             <Link className="nav-brand" href={isBusiness ? '/' : '#top'}>
-              <UlesLogo size={28} />
+              <img src="/ules-logo.png" alt="Ules" width={28} height={28} className="nav-logo" />
               <span className="brand-word">ules</span>
             </Link>
             <p className="footer-soft">{f.tagline}</p>
