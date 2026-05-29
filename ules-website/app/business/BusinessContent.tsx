@@ -1,5 +1,6 @@
 'use client'
 
+import { Fragment } from 'react'
 import Link from 'next/link'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
@@ -292,14 +293,14 @@ export default function BusinessContent() {
           <div className="pricing-card">
             <div className="pricing-grid">
               {pr.items.map((item, i) => (
-                <>
-                  {i > 0 && <div className="pricing-divider" key={`div-${i}`} />}
-                  <div className="pricing-item" key={i}>
+                <Fragment key={i}>
+                  {i > 0 && <div className="pricing-divider" />}
+                  <div className="pricing-item">
                     <div className="pricing-num">{item.num}</div>
                     <div className="pricing-lbl">{item.label}</div>
                     <p>{item.p}</p>
                   </div>
-                </>
+                </Fragment>
               ))}
             </div>
           </div>

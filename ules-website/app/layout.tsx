@@ -9,6 +9,7 @@ const dmSans = DM_Sans({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://ules.business'),
   title: {
     default: 'Ules — Rescue food. Save money.',
     template: '%s | Ules',
@@ -19,6 +20,7 @@ export const metadata: Metadata = {
     siteName: 'Ules',
     type: 'website',
     locale: 'en_US',
+    alternateLocale: ['ru_RU', 'kk_KZ'],
   },
 }
 

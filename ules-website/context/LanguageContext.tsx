@@ -1,6 +1,6 @@
 'use client'
 
-import { createContext, useContext, useState, useEffect, type ReactNode } from 'react'
+import { createContext, useContext, useEffect, useSyncExternalStore, type ReactNode } from 'react'
 import { type Locale, type Translations, translations } from '@/lib/i18n'
 
 interface LanguageContextType {
@@ -11,19 +11,41 @@ interface LanguageContextType {
 
 const LanguageContext = createContext<LanguageContextType | null>(null)
 
+const STORAGE_KEY = 'ules-lang'
+const CHANGE_EVENT = 'ules-locale-change'
+
+function isLocale(value: unknown): value is Locale {
+  return value === 'en' || value === 'ru' || value === 'kz'
+}
+
+function subscribe(callback: () => void) {
+  window.addEventListener(CHANGE_EVENT, callback)
+  window.addEventListener('storage', callback)
+  return () => {
+    window.removeEventListener(CHANGE_EVENT, callback)
+    window.removeEventListener('storage', callback)
+  }
+}
+
+function getClientSnapshot(): Locale {
+  const saved = window.localStorage.getItem(STORAGE_KEY)
+  return isLocale(saved) ? saved : 'en'
+}
+
+function getServerSnapshot(): Locale {
+  return 'en'
+}
+
 export function LanguageProvider({ children }: { children: ReactNode }) {
-  const [locale, setLocaleState] = useState<Locale>('en')
+  const locale = useSyncExternalStore(subscribe, getClientSnapshot, getServerSnapshot)
 
   useEffect(() => {
-    const saved = localStorage.getItem('ules-lang') as Locale | null
-    if (saved && (saved === 'en' || saved === 'ru' || saved === 'kz')) {
-      setLocaleState(saved)
-    }
-  }, [])
+    document.documentElement.lang = locale
+  }, [locale])
 
   function setLocale(next: Locale) {
-    setLocaleState(next)
-    localStorage.setItem('ules-lang', next)
+    window.localStorage.setItem(STORAGE_KEY, next)
+    window.dispatchEvent(new Event(CHANGE_EVENT))
   }
 
   return (
