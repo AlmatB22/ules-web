@@ -4,6 +4,7 @@ import { Fragment } from 'react'
 import Link from 'next/link'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
+import BizPhoneScreen from '@/components/BizPhoneScreen'
 import { useLanguage } from '@/context/LanguageContext'
 
 export default function BusinessContent() {
@@ -15,6 +16,15 @@ export default function BusinessContent() {
   const pr = b.pricing
   const fq = b.faq
   const ct = b.contact
+
+  const phoneLabels = {
+    location: bh.phoneLocation,
+    cafeteria: bh.phoneCafeteria,
+    completed: bh.phoneCompleted,
+    orderReq: bh.phoneOrderReq,
+    revenue: bh.phoneRevenue,
+    daily: bh.phoneDaily,
+  }
 
   return (
     <>
@@ -55,47 +65,7 @@ export default function BusinessContent() {
             <div className="phone phone-tilt phone-biz">
               <div className="phone-notch" />
               <div className="phone-screen biz-phone-screen">
-                <div className="biz-ph-loc">
-                  <div>
-                    <div className="biz-ph-cap">{bh.phoneLocation}</div>
-                    <div className="biz-ph-loc-name">{bh.phoneCafeteria}</div>
-                  </div>
-                  <div className="biz-avatar" />
-                </div>
-                <div className="biz-ph-warn">{bh.phonePending}</div>
-                <div className="biz-ph-stats">
-                  <div className="biz-ph-stat">
-                    <div className="biz-ph-stat-num">20</div>
-                    <div className="biz-ph-stat-lbl">{bh.phoneCompleted}</div>
-                  </div>
-                  <div className="biz-ph-stat">
-                    <div className="biz-ph-stat-num">05</div>
-                    <div className="biz-ph-stat-lbl">{bh.phoneOrderReq}</div>
-                  </div>
-                </div>
-                <div className="biz-ph-rev">
-                  <div className="biz-ph-rev-head">
-                    <div>
-                      <div className="biz-ph-rev-lbl">{bh.phoneRevenue}</div>
-                      <div className="biz-ph-rev-num">₸2,241</div>
-                    </div>
-                    <div className="biz-ph-dd">{bh.phoneDaily}</div>
-                  </div>
-                  <div className="biz-ph-chart">
-                    <div className="biz-ph-tooltip">₸500</div>
-                    <svg viewBox="0 0 200 60" preserveAspectRatio="none" style={{ width: '100%', height: 50 }}>
-                      <defs>
-                        <linearGradient id="biz-ph-grad" x1="0" y1="0" x2="0" y2="1">
-                          <stop offset="0%" stopColor="#4BBDE8" stopOpacity="0.22" />
-                          <stop offset="100%" stopColor="#4BBDE8" stopOpacity="0" />
-                        </linearGradient>
-                      </defs>
-                      <path d="M0,40 C25,30 40,45 60,35 C80,25 100,32 130,22 C160,12 180,18 200,15" stroke="#4BBDE8" strokeWidth="2.2" fill="none" strokeLinecap="round" />
-                      <path d="M0,40 C25,30 40,45 60,35 C80,25 100,32 130,22 C160,12 180,18 200,15 L200,60 L0,60 Z" fill="url(#biz-ph-grad)" />
-                      <circle cx="80" cy="25" r="3" fill="white" stroke="#4BBDE8" strokeWidth="1.5" />
-                    </svg>
-                  </div>
-                </div>
+                <BizPhoneScreen labels={phoneLabels} warning={bh.phonePending} />
               </div>
               <div className="phone-tabbar">
                 <div className="phone-tab phone-tab-on" />
@@ -221,54 +191,16 @@ export default function BusinessContent() {
               <div className="phone phone-static">
                 <div className="phone-notch" />
                 <div className="phone-screen">
-                  <div className="biz-ph-loc">
-                    <div>
-                      <div className="biz-ph-cap">{bh.phoneLocation}</div>
-                      <div className="biz-ph-loc-name">{bh.phoneCafeteria}</div>
-                    </div>
-                    <div className="biz-avatar" />
-                  </div>
-                  <div className="biz-ph-stats">
-                    <div className="biz-ph-stat">
-                      <div className="biz-ph-stat-num">20</div>
-                      <div className="biz-ph-stat-lbl">{bh.phoneCompleted}</div>
-                    </div>
-                    <div className="biz-ph-stat">
-                      <div className="biz-ph-stat-num">05</div>
-                      <div className="biz-ph-stat-lbl">{bh.phoneOrderReq}</div>
-                    </div>
-                  </div>
-                  <div className="biz-ph-rev">
-                    <div className="biz-ph-rev-head">
-                      <div>
-                        <div className="biz-ph-rev-lbl">{bh.phoneRevenue}</div>
-                        <div className="biz-ph-rev-num">₸2,241</div>
+                  <BizPhoneScreen labels={phoneLabels}>
+                    <div className="biz-rev-mini">
+                      <div className="ps-line ps-line-strong" style={{ width: '30%' }} />
+                      <div className="biz-rev-mini-row">
+                        <span className="ps-star" />
+                        <div className="ps-line ps-line-strong" style={{ width: 28 }} />
+                        <div className="ps-line" style={{ width: 80 }} />
                       </div>
-                      <div className="biz-ph-dd">{bh.phoneDaily}</div>
                     </div>
-                    <div className="biz-ph-chart">
-                      <div className="biz-ph-tooltip">₸500</div>
-                      <svg viewBox="0 0 200 60" preserveAspectRatio="none" style={{ width: '100%', height: 50 }}>
-                        <path d="M0,40 C25,30 40,45 60,35 C80,25 100,32 130,22 C160,12 180,18 200,15" stroke="#4BBDE8" strokeWidth="2.2" fill="none" strokeLinecap="round" />
-                        <path d="M0,40 C25,30 40,45 60,35 C80,25 100,32 130,22 C160,12 180,18 200,15 L200,60 L0,60 Z" fill="url(#biz-ph-grad-2)" />
-                        <defs>
-                          <linearGradient id="biz-ph-grad-2" x1="0" y1="0" x2="0" y2="1">
-                            <stop offset="0%" stopColor="#4BBDE8" stopOpacity="0.22" />
-                            <stop offset="100%" stopColor="#4BBDE8" stopOpacity="0" />
-                          </linearGradient>
-                        </defs>
-                        <circle cx="80" cy="25" r="3" fill="white" stroke="#4BBDE8" strokeWidth="1.5" />
-                      </svg>
-                    </div>
-                  </div>
-                  <div className="biz-rev-mini">
-                    <div className="ps-line ps-line-strong" style={{ width: '30%' }} />
-                    <div className="biz-rev-mini-row">
-                      <span className="ps-star" />
-                      <div className="ps-line ps-line-strong" style={{ width: 28 }} />
-                      <div className="ps-line" style={{ width: 80 }} />
-                    </div>
-                  </div>
+                  </BizPhoneScreen>
                 </div>
                 <div className="phone-tabbar">
                   <div className="phone-tab phone-tab-on" />
