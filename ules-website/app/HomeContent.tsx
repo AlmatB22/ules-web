@@ -12,7 +12,6 @@ export default function HomeContent() {
   const ms = h.mission
   const au = h.audiences
   const ft = h.features
-  const gl = h.gallery
   const bz = h.biz
   const tm = h.team
 
@@ -157,49 +156,6 @@ export default function HomeContent() {
             <div className="feat-mock">
               <div className="phone phone-static">
                 <img src="/screens/profile.png" alt="Profile screen" className="phone-screenshot" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ─── GALLERY ─────────────────────────────────────────────── */}
-      <section className="gallery" id="gallery">
-        <div className="section-wrap">
-          <div className="section-head">
-            <div className="eyebrow">{gl.eyebrow}</div>
-            <h2>{gl.h2}</h2>
-            <p className="section-lede">{gl.subtitle}</p>
-          </div>
-          <div className="gallery-strip">
-            <div className="g-phone">
-              <div className="g-label">{gl.labels[0]}</div>
-              <div className="phone phone-mini">
-                <img src="/screens/login.png" alt="Login screen" className="phone-screenshot" />
-              </div>
-            </div>
-            <div className="g-phone">
-              <div className="g-label">{gl.labels[1]}</div>
-              <div className="phone phone-mini">
-                <img src="/screens/home.png" alt="App home screen" className="phone-screenshot" />
-              </div>
-            </div>
-            <div className="g-phone">
-              <div className="g-label">{gl.labels[2]}</div>
-              <div className="phone phone-mini">
-                <img src="/screens/restaurant.png" alt="Restaurant profile" className="phone-screenshot" />
-              </div>
-            </div>
-            <div className="g-phone">
-              <div className="g-label">{gl.labels[3]}</div>
-              <div className="phone phone-mini">
-                <img src="/screens/cart.png" alt="Cart screen" className="phone-screenshot" />
-              </div>
-            </div>
-            <div className="g-phone">
-              <div className="g-label">{gl.labels[4]}</div>
-              <div className="phone phone-mini">
-                <img src="/screens/order.png" alt="Order completed" className="phone-screenshot" />
               </div>
             </div>
           </div>

@@ -44,7 +44,6 @@ export default function Footer({ variant = 'consumer' }: FooterProps) {
               <div className="footer-col">
                 <div className="footer-h">{f.productCol}</div>
                 <a href="#features">{t.nav.features}</a>
-                <a href="#gallery">{f.appTour}</a>
                 <a href="#mission">{t.nav.mission}</a>
               </div>
               <div className="footer-col">
