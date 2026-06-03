@@ -1,0 +1,14 @@
+# macOS
+.DS_Store
+
+# Editor / OS junk
+*.swp
+*~
+Thumbs.db
+
+# Node (the app keeps its own .gitignore in ules-website/)
+node_modules/
+
+# Build output
+ules-website/.next/
+ules-website/out/
