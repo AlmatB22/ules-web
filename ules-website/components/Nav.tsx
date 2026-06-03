@@ -20,14 +20,12 @@ export default function Nav({ variant = 'consumer' }: NavProps) {
     <>
       <a href="#mission" onClick={close}>{t.nav.mission}</a>
       <a href="#features" onClick={close}>{t.nav.features}</a>
-      <a href="#business" onClick={close}>{t.nav.forBusiness}</a>
       <a href="#team" onClick={close}>{t.nav.team}</a>
     </>
   )
 
   const businessLinks = (
     <>
-      <Link href="/" onClick={close}>{t.nav.forConsumers}</Link>
       <a href="#how" onClick={close}>{t.nav.howItWorks}</a>
       <a href="#dashboard" onClick={close}>{t.nav.dashboard}</a>
       <a href="#pricing" onClick={close}>{t.nav.fees}</a>
@@ -36,6 +34,31 @@ export default function Nav({ variant = 'consumer' }: NavProps) {
   )
 
   const links = isBusiness ? businessLinks : consumerLinks
+
+  const crossCta = isBusiness ? (
+    <Link href="/" className="nav-cta nav-cta-consumer" onClick={close}>
+      {t.nav.forConsumers}
+    </Link>
+  ) : (
+    <Link href="/business" className="nav-cta nav-cta-business" onClick={close}>
+      {t.nav.forRestaurants}
+    </Link>
+  )
+
+  const langSwitch = (
+    <div className="lang-switch" role="group" aria-label="Language">
+      {(['en', 'ru', 'kz'] as Locale[]).map((l) => (
+        <button
+          key={l}
+          type="button"
+          className={locale === l ? 'active' : ''}
+          onClick={() => setLocale(l)}
+        >
+          {l.toUpperCase()}
+        </button>
+      ))}
+    </div>
+  )
 
   return (
     <div className="nav-wrapper">
@@ -50,18 +73,8 @@ export default function Nav({ variant = 'consumer' }: NavProps) {
         <nav className="nav-links">{links}</nav>
 
         <div className="nav-right">
-          <div className="lang-switch" role="group" aria-label="Language">
-            {(['en', 'ru', 'kz'] as Locale[]).map((l) => (
-              <button
-                key={l}
-                type="button"
-                className={locale === l ? 'active' : ''}
-                onClick={() => setLocale(l)}
-              >
-                {l.toUpperCase()}
-              </button>
-            ))}
-          </div>
+          {crossCta}
+          <div className="nav-lang-desktop">{langSwitch}</div>
           <button
             type="button"
             className={`nav-hamburger${menuOpen ? ' open' : ''}`}
@@ -76,7 +89,12 @@ export default function Nav({ variant = 'consumer' }: NavProps) {
         </div>
       </header>
 
-      {menuOpen && <nav className="nav-mobile-menu">{links}</nav>}
+      {menuOpen && (
+        <nav className="nav-mobile-menu">
+          {links}
+          <div className="nav-mobile-lang">{langSwitch}</div>
+        </nav>
+      )}
     </div>
   )
 }

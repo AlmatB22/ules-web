@@ -4,7 +4,7 @@ const en = {
   nav: {
     mission: 'Mission',
     features: 'Features',
-    forBusiness: 'For business',
+    forRestaurants: 'For restaurants',
     team: 'Team',
     forConsumers: 'For consumers',
     howItWorks: 'How it works',
@@ -212,7 +212,7 @@ const ru: Translations = {
   nav: {
     mission: 'Миссия',
     features: 'Функции',
-    forBusiness: 'Для бизнеса',
+    forRestaurants: 'Для ресторанов',
     team: 'Команда',
     forConsumers: 'Для пользователей',
     howItWorks: 'Как это работает',
@@ -418,7 +418,7 @@ const kz: Translations = {
   nav: {
     mission: 'Міндет',
     features: 'Мүмкіндіктер',
-    forBusiness: 'Бизнес үшін',
+    forRestaurants: 'Мейрамханалар үшін',
     team: 'Команда',
     forConsumers: 'Пайдаланушылар үшін',
     howItWorks: 'Қалай жұмыс істейді',
