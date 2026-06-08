@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     template: '%s | Ules',
   },
   description:
-    'Local restaurants in Astana and Almaty cook more than they sell. Ules lets you pick up surplus food at the end of the day — at up to 70% off.',
+    'Local restaurants in Astana and Almaty cook more than they sell. Ules lets you pick up surplus food at the end of the day — at least 40% off.',
   openGraph: {
     siteName: 'Ules',
     type: 'website',
