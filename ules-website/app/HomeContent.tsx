@@ -6,7 +6,8 @@ import Footer from '@/components/Footer'
 import { useLanguage } from '@/context/LanguageContext'
 
 export default function HomeContent() {
-  const { t } = useLanguage()
+  const { t, locale } = useLanguage()
+  const dir = locale === 'en' ? 'eng' : locale
   const h = t.home
   const hr = h.hero
   const ms = h.mission
@@ -52,7 +53,7 @@ export default function HomeContent() {
 
           <div className="hero-phone-wrap">
             <div className="phone phone-tilt">
-              <img src="/screens/eng-home.png" alt="Ules app home screen" className="phone-screenshot" />
+              <img src={`/screens/${dir}/home.png`} alt="Ules app home screen" className="phone-screenshot" />
             </div>
           </div>
         </div>
@@ -121,7 +122,7 @@ export default function HomeContent() {
             </div>
             <div className="feat-mock">
               <div className="phone phone-static">
-                <img src="/screens/map.png" alt="Restaurant map view" className="phone-screenshot" />
+                <img src={`/screens/${dir}/map.png`} alt="Restaurant map view" className="phone-screenshot" />
               </div>
             </div>
           </div>
@@ -138,7 +139,7 @@ export default function HomeContent() {
             </div>
             <div className="feat-mock">
               <div className="phone phone-static">
-                <img src="/screens/food.png" alt="Food detail screen" className="phone-screenshot" />
+                <img src={`/screens/${dir}/bag.png`} alt="Food detail screen" className="phone-screenshot" />
               </div>
             </div>
           </div>
@@ -155,7 +156,7 @@ export default function HomeContent() {
             </div>
             <div className="feat-mock">
               <div className="phone phone-static">
-                <img src="/screens/profile.png" alt="Profile screen" className="phone-screenshot" />
+                <img src={`/screens/${dir}/profile.png`} alt="Profile screen" className="phone-screenshot" />
               </div>
             </div>
           </div>
