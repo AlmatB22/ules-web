@@ -20,7 +20,6 @@ export default function Nav({ variant = 'consumer' }: NavProps) {
     <>
       <a href="#mission" onClick={close}>{t.nav.mission}</a>
       <a href="#features" onClick={close}>{t.nav.features}</a>
-      <a href="#team" onClick={close}>{t.nav.team}</a>
     </>
   )
 

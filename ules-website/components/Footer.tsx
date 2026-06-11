@@ -36,7 +36,6 @@ export default function Footer({ variant = 'consumer' }: FooterProps) {
               <div className="footer-col">
                 <div className="footer-h">Site</div>
                 <Link href="/">{t.nav.forConsumers}</Link>
-                <Link href="/#team">{f.team}</Link>
               </div>
             </>
           ) : (
@@ -57,10 +56,7 @@ export default function Footer({ variant = 'consumer' }: FooterProps) {
           <div className="footer-col">
             <div className="footer-h">{f.contactCol}</div>
             <a href="mailto:hello@ules.kz">hello@ules.kz</a>
-            {isBusiness
-              ? <a href="mailto:partners@ules.kz">partners@ules.kz</a>
-              : <a href="#team">{f.team}</a>
-            }
+            {isBusiness && <a href="mailto:partners@ules.kz">partners@ules.kz</a>}
           </div>
           <div className="footer-col">
             <div className="footer-h">{f.legalCol}</div>
