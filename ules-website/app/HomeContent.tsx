@@ -14,6 +14,7 @@ export default function HomeContent() {
   const au = h.audiences
   const ft = h.features
   const bz = h.biz
+  const tm = h.team
 
   return (
     <>
@@ -215,6 +216,27 @@ export default function HomeContent() {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ─── TEAM ─────────────────────────────────────────────── */}
+      <section className="team" id="team">
+        <div className="section-wrap">
+          <div className="section-head">
+            <div className="eyebrow">{tm.eyebrow}</div>
+            <h2>{tm.h2}</h2>
+            <p className="section-lede">{tm.subtitle}</p>
+          </div>
+          <div className="team-grid">
+            {tm.members.map((member, i) => (
+              <article className="team-card" key={i}>
+                <div className={`team-photo team-photo-${i + 1}`}><span className="team-init">{member.name[0]}</span></div>
+                <div className="team-name">{member.name}</div>
+                <div className="team-role">{member.role}</div>
+                <p className="team-bio">{member.bio}</p>
+              </article>
+            ))}
           </div>
         </div>
       </section>
