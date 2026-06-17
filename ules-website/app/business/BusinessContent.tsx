@@ -20,10 +20,26 @@ export default function BusinessContent() {
   const phoneLabels = {
     location: bh.phoneLocation,
     cafeteria: bh.phoneCafeteria,
+    pending: bh.phonePending,
+    todayStatus: bh.phoneTodayStatus,
+    todayInfo: bh.phoneTodayInfo,
+    todayCta: bh.phoneTodayCta,
     completed: bh.phoneCompleted,
     orderReq: bh.phoneOrderReq,
     revenue: bh.phoneRevenue,
+    revLabel: bh.phoneRevLabel,
+    seeDetails: bh.phoneSeeDetails,
     daily: bh.phoneDaily,
+    weekly: bh.phoneWeekly,
+    monthly: bh.phoneMonthly,
+    ratings: bh.phoneRatings,
+    seeAll: bh.phoneSeeAll,
+    ratingsFrom: bh.phoneRatingsFrom,
+    popular: bh.phonePopular,
+    item1: bh.phoneItem1,
+    item1Sold: bh.phoneItem1Sold,
+    item2: bh.phoneItem2,
+    item2Sold: bh.phoneItem2Sold,
   }
 
   return (
@@ -65,7 +81,7 @@ export default function BusinessContent() {
             <div className="phone phone-tilt phone-biz">
               <div className="phone-notch" />
               <div className="phone-screen biz-phone-screen">
-                <BizPhoneScreen labels={phoneLabels} warning={bh.phonePending} />
+                <BizPhoneScreen labels={phoneLabels} />
               </div>
               <div className="phone-tabbar">
                 <div className="phone-tab phone-tab-on" />
@@ -191,16 +207,7 @@ export default function BusinessContent() {
               <div className="phone phone-static">
                 <div className="phone-notch" />
                 <div className="phone-screen">
-                  <BizPhoneScreen labels={phoneLabels}>
-                    <div className="biz-rev-mini">
-                      <div className="ps-line ps-line-strong" style={{ width: '30%' }} />
-                      <div className="biz-rev-mini-row">
-                        <span className="ps-star" />
-                        <div className="ps-line ps-line-strong" style={{ width: 28 }} />
-                        <div className="ps-line" style={{ width: 80 }} />
-                      </div>
-                    </div>
-                  </BizPhoneScreen>
+                  <BizPhoneScreen labels={phoneLabels} variant="analytics" />
                 </div>
                 <div className="phone-tabbar">
                   <div className="phone-tab phone-tab-on" />
