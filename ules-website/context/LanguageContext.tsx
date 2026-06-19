@@ -29,11 +29,11 @@ function subscribe(callback: () => void) {
 
 function getClientSnapshot(): Locale {
   const saved = window.localStorage.getItem(STORAGE_KEY)
-  return isLocale(saved) ? saved : 'en'
+  return isLocale(saved) ? saved : 'ru'
 }
 
 function getServerSnapshot(): Locale {
-  return 'en'
+  return 'ru'
 }
 
 export function LanguageProvider({ children }: { children: ReactNode }) {

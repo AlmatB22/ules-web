@@ -11,13 +11,14 @@ const en = {
     dashboard: 'Dashboard',
     fees: 'Fees',
     faq: 'FAQ',
+    language: 'Language',
   },
   home: {
     hero: {
       kicker: 'A food-rescue app from Kazakhstan',
       h1a: 'Good food.',
       h1b: 'Rescued daily.',
-      lede: 'Local restaurants in Astana and Almaty cook more than they sell. Ules lets you rescue that fresh, surplus food at the end of the day — at least 40% off menu prices.',
+      lede: 'Local restaurants in Astana cook more than they sell. Ules lets you rescue that fresh, surplus food at the end of the day — at least 40% off menu prices.',
       stat1: '40%',
       stat1Label: 'off menu prices',
       stat2: '3',
@@ -28,21 +29,21 @@ const en = {
       phoneMealsSaved: '≈7 meals saved',
       phoneThisWeek: 'this week',
       phoneClosingSoon: 'Closing soon',
-      phoneClosingDesc: '3 bags · Nomad Grill',
+      phoneClosingDesc: '3 boxes · Nomad Grill',
     },
     mission: {
       eyebrow: 'Our mission',
       h2a: 'One in three meals never gets eaten.',
       h2b: "We think that's worth fixing.",
       p1: "Ules started in Astana with a small idea: restaurants often end the day with perfectly good surplus food, and people would happily enjoy it for a fraction of the price. The catch was always logistics — how do you connect them, fast?",
-      p2: "So we built an app. Restaurants list their surprise bags. You see what's near you, reserve one, and pick it up before they close. Everyone gains something — money saved, food rescued, a little less carbon. It's a small loop, but it adds up.",
+      p2: "So we built an app. Restaurants list their surprise boxes. You see what's near you, reserve one, and pick it up before they close. Everyone gains something — money saved, food rescued, a little less carbon. It's a small loop, but it adds up.",
     },
     audiences: {
       consumerTag: 'For people',
       consumerH3: 'Find dinner. Save the planet a little.',
       consumerP: "Open the app, see what nearby restaurants have rescued today, pick a bag, and walk over to collect it. You usually pay between ₸600 and ₸2,000 for food that originally cost two or three times that.",
       consumerList: [
-        'Browse rescue bags near you',
+        'Browse rescue boxes near you',
         'See exactly when to collect',
         'Track your impact over time',
         'Pay in-app, show the receipt at pickup',
@@ -51,7 +52,7 @@ const en = {
       businessH3: 'Turn surplus into revenue.',
       businessP: "Listing takes a minute. Set up a surprise bag, pick a collection window, and new customers will walk through your door for the fresh food you have left at the end of service. We handle payment and customer comms.",
       businessList: [
-        'List bags in seconds',
+        'List boxes in seconds',
         'Dashboard with daily revenue + reviews',
         'Direct payouts in Tenge',
         'No upfront cost — we take a small fee per bag',
@@ -64,7 +65,7 @@ const en = {
       f1: {
         num: '01',
         h3: "See what's near you, right now",
-        p: "The home feed shows what's available today, sorted by distance and pickup window. Closing-soon bags are flagged so you don't miss them.",
+        p: "The home feed shows what's available today, sorted by distance and pickup window. Closing-soon boxes are flagged so you don't miss them.",
         points: ['Filters for sweet, salty, or both', 'Map and list view', 'Pin restaurants you love'],
       },
       f2: {
@@ -89,7 +90,7 @@ const en = {
       eyebrow: 'For restaurants',
       h2: 'Are you a restaurant or café?',
       p1: "If you cook fresh food daily and have more than you sell, Ules can help. Set up takes about ten minutes. You decide what goes into each bag, how many, and when customers collect.",
-      p2: "We're already partnered with bakeries, plov houses, grill spots, cafés, and small bistros across Astana and Almaty.",
+      p2: "We're already partnered with bakeries, plov houses, grill spots, cafés, and small bistros across Astana",
       link: 'See the partner side →',
     },
     team: {
@@ -99,7 +100,7 @@ const en = {
       members: [
         { name: 'Timur Rakhimov', role: 'Founding Engineer', bio: 'Co-built every piece of Ules — from the consumer app to the backend that connects restaurants with hungry neighbors. Designs the data model, ships features by night, tests them in Astana kitchens by day.' },
         { name: 'Almat Bolatbekov', role: 'Founding Engineer', bio: 'Co-built the software powering Ules end-to-end — the mobile app, the partner dashboard, the maps. Obsessed with making every tap feel obvious and every restaurant onboarding take under ten minutes.' },
-        { name: 'Yeshmukhamet Aimaganbetov', role: 'Founder · Operations & Growth', bio: 'Brings Ules into the real world — signs up restaurants, negotiates partnerships, and makes sure every surprise bag finds its customer. Knows every café manager from Almaty to Astana by first name.' },
+        { name: 'Yeshmukhamet Aimaganbetov', role: 'Founder · Operations & Growth', bio: 'Brings Ules into the real world — signs up restaurants, negotiates partnerships, and makes sure every surprise bag finds its customer.' },
       ],
     },
   },
@@ -108,7 +109,7 @@ const en = {
       kicker: 'Ules for restaurants & cafés',
       h1a: 'Turn surplus food',
       h1b: 'into new revenue.',
-      lede: "If you cook fresh food daily and have more than you sell, Ules helps you offer it as surprise bags at the end of the day. No upfront cost — we take a small fee per bag sold, and you keep the rest.",
+      lede: "If you cook fresh food daily and have more than you sell, Ules helps you offer it as surprise boxes at the end of the day. No upfront cost — we take a small fee per bag sold, and you keep the rest.",
       stat1: '10 min',
       stat1Label: 'to set up',
       stat2: '0₸',
@@ -119,7 +120,7 @@ const en = {
       phoneCafeteria: 'Cafeteria',
       phonePending: '⚠ PENDING APPROVAL',
       phoneTodayStatus: 'Live now',
-      phoneTodayInfo: '12 bags · 20:00–22:00',
+      phoneTodayInfo: '12 boxes · 20:00–22:00',
       phoneTodayCta: 'Edit',
       phoneCompleted: "Today's orders",
       phoneOrderReq: 'New requests',
@@ -147,7 +148,7 @@ const en = {
       h2: 'Listing a bag takes about a minute.',
       steps: [
         { h3: 'Sign up your store', p: 'Add your business name, address, and a photo. We approve new partners within 24 hours.' },
-        { h3: 'List your surprise bags', p: 'Set a name, price, pickup window, and how many bags. Sweet or salty — your call.' },
+        { h3: 'List your surprise boxes', p: 'Set a name, price, pickup window, and how many boxes. Sweet or salty — your call.' },
         { h3: 'Customers reserve & pay', p: "They see your bag on the map, reserve it, and pay in-app. You don't handle cash or cards." },
         { h3: 'They collect, you keep going', p: 'Customer shows up at pickup time with a digital receipt. You hand over the bag. Done.' },
       ],
@@ -159,7 +160,7 @@ const en = {
       d1: {
         num: '01',
         h3: 'Manage your menu in seconds',
-        p: "Tap to add a new bag. Pick a category, set price and pickup time, snap a photo. Mark as out of stock when the day's bags are gone.",
+        p: "Tap to add a new bag. Pick a category, set price and pickup time, snap a photo. Mark as out of stock when the day's boxes are gone.",
         points: ['Add, edit, or hide items instantly', 'Set pickup windows that fit your closing time', 'Mark out-of-stock with one tap'],
       },
       d2: {
@@ -192,7 +193,7 @@ const en = {
         { q: 'What kinds of restaurants is Ules a good fit for?', a: 'Bakeries, cafés, plov houses, grills, dessert shops, bistros — basically anywhere that cooks fresh food and has surplus at the end of the day. If your menu is mostly long-shelf-life packaged goods, Ules probably isn\'t the right fit.' },
         { q: 'Do I need a smartphone?', a: "Yes. The partner app runs on iOS and Android. You can manage everything from your phone — there's no separate POS or tablet to buy." },
         { q: 'Who decides what goes in a bag?', a: 'You do. Most partners offer a "mystery bag" — a mix of what\'s left at the end of the day. You set the category (sweet, salty, both) and roughly what\'s inside in the description. Customers expect a surprise.' },
-        { q: 'What if no one collects a bag?', a: "The customer is charged when they reserve, so even uncollected bags are paid. If a customer no-shows repeatedly, we restrict their account." },
+        { q: 'What if no one collects a bag?', a: "The customer is charged when they reserve, so even uncollected boxes are paid. If a customer no-shows repeatedly, we restrict their account." },
         { q: 'How do I get paid?', a: "Direct bank transfer every Monday, covering the previous week's sales with our commission already deducted. You see a full breakdown in the dashboard." },
         { q: 'What about hygiene and food safety?', a: "You're responsible for the same food-safety standards you'd apply to any meal you sell. We require partners to comply with Kazakhstan food-safety regulations. Customers can rate and review each pickup." },
       ],
@@ -235,6 +236,7 @@ const ru: Translations = {
     dashboard: 'Панель',
     fees: 'Комиссии',
     faq: 'Вопросы',
+    language: 'Язык',
   },
   home: {
     hero: {
@@ -323,7 +325,7 @@ const ru: Translations = {
       members: [
         { name: 'Тимур Рахимов', role: 'Сооснователь · Инженерия', bio: 'Соавтор каждой части Ules — от пользовательского приложения до бэкенда, связывающего рестораны с голодными соседями. Проектирует архитектуру данных, по вечерам выпускает фичи, по утрам тестирует их в настоящих кухнях Астаны.' },
         { name: 'Алмат Болатбеков', role: 'Сооснователь · Инженерия', bio: 'Соавтор всей программной части Ules — мобильного приложения, панели партнёров и карт. Заботится о том, чтобы каждое касание было очевидным, а подключение ресторана занимало меньше десяти минут.' },
-        { name: 'Ешмухамет Аймагамбетов', role: 'Сооснователь · Операции и рост', bio: 'Воплощает Ules в жизнь: подключает рестораны, ведёт партнёрства и следит за тем, чтобы каждый сюрприз-бокс нашёл своего клиента. Знает каждого менеджера кафе от Алматы до Астаны по имени.' },
+        { name: 'Ешмухамет Аймагамбетов', role: 'Сооснователь · Операции и рост', bio: 'Воплощает Ules в жизнь: подключает рестораны, ведёт партнёрства и следит за тем, чтобы каждый сюрприз-бокс нашёл своего клиента.' },
       ],
     },
   },
@@ -456,6 +458,7 @@ const kz: Translations = {
     dashboard: 'Тақта',
     fees: 'Комиссиялар',
     faq: 'Сұрақтар',
+    language: 'Тіл',
   },
   home: {
     hero: {
@@ -534,7 +537,7 @@ const kz: Translations = {
       eyebrow: 'Мейрамханалар үшін',
       h2: 'Сізде мейрамхана немесе кафе бар ма?',
       p1: 'Егер сіз күн сайын жаңа піскен тағам дайындап, күн соңында сатылғаннан гөрі көбірек қалып қойып отырса, Ules көмектеседі. Баптау шамамен он минут уақыт алады. Әр бокстың ішіне не салатыныңызды, қанша болатынын және қашан берілетінін өзіңіз шешесіз.',
-      p2: 'Біз қазірдің өзінде Астана мен Алматыдағы наубайханалармен, палау орталықтарымен, гриль, кафелермен және шағын бистролармен серіктестік орнаттық.',
+      p2: 'Біз қазірдің өзінде Астанадағы наубайханалармен, палау орталықтарымен, гриль, кафелермен және шағын бистролармен серіктестік орнаттық.',
       link: 'Серіктестік жағын қарау →',
     },
     team: {
@@ -544,7 +547,7 @@ const kz: Translations = {
       members: [
         { name: 'Тимур Рахимов', role: 'Негізін бірге қалаушы · Инженерия', bio: 'Ules-тің әрбір бөлігінің бірлескен авторы — пайдаланушы қосымшасынан бастап мейрамханаларды көршілермен байланыстыратын бэкендке дейін. Деректер архитектурасын жобалайды, кешке жаңа функцияларды іске қосады, ал таңертең оларды Астанадағы нақты асханаларда сынайды.' },
         { name: 'Алмат Болатбеков', role: 'Негізін бірге қалаушы · Инженерия', bio: 'Ules-тің бүкіл бағдарламалық бөлігінің бірлескен авторы — мобильді қосымша, серіктестер панелі мен карталары. Әрбір әрекеттің түсінікті болуы мен мейрамхананы қосу процесінің он минуттан аз уақыт алуын қамтамасыз етеді.' },
-        { name: 'Ешмухамет Аймагамбетов', role: 'Негізін бірге қалаушы · Операциялар және өсу', bio: 'Ules-ті шынайы өмірге айналдырады: мейрамханаларды қосады, серіктестік жүргізеді және әрбір тосын-бокстың өз клиентін табуын қадағалайды. Алматыдан Астанаға дейінгі әрбір кафе менеджерін атымен таниды.' },
+        { name: 'Ешмухамет Аймагамбетов', role: 'Негізін бірге қалаушы · Операциялар және өсу', bio: 'Ules-ті шынайы өмірге айналдырады: мейрамханаларды қосады, серіктестік жүргізеді және әрбір тосын-бокстың өз клиентін табуын қадағалайды.' },
       ],
     },
   },

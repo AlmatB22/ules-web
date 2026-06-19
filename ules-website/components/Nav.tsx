@@ -47,7 +47,7 @@ export default function Nav({ variant = 'consumer' }: NavProps) {
 
   const langSwitch = (
     <div className="lang-switch" role="group" aria-label="Language">
-      {(['en', 'ru', 'kz'] as Locale[]).map((l) => (
+      {(['ru', 'kz', 'en'] as Locale[]).map((l) => (
         <button
           key={l}
           type="button"
@@ -92,7 +92,10 @@ export default function Nav({ variant = 'consumer' }: NavProps) {
       {menuOpen && (
         <nav className="nav-mobile-menu">
           {links}
-          <div className="nav-mobile-lang">{langSwitch}</div>
+          <div className="nav-mobile-lang">
+            <span className="nav-mobile-lang-label">{t.nav.language}</span>
+            {langSwitch}
+          </div>
         </nav>
       )}
     </div>

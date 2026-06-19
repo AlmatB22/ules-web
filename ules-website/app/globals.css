@@ -180,7 +180,22 @@ img { display: block; max-width: 100%; }
 }
 .nav-mobile-menu a:last-child { border-bottom: none; }
 .nav-mobile-menu a:hover { color: var(--text-1); }
-.nav-mobile-lang { display: none; padding-top: 14px; }
+.nav-mobile-lang {
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 8px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+.nav-mobile-lang-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: var(--text-3);
+}
 
 /* ─── HERO ─────────────────────────────────────────────── */
 .hero {
@@ -970,5 +985,5 @@ img { display: block; max-width: 100%; }
   .nav-right { gap: 8px; }
   .nav-cta { font-size: 13px; padding: 8px 12px; }
   .nav-lang-desktop { display: none; }
-  .nav-mobile-lang { display: block; }
+  .nav-mobile-lang { display: flex; }
 }
