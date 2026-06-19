@@ -40,7 +40,7 @@ const en = {
     },
     audiences: {
       consumerTag: 'For people',
-      consumerH3: 'Find dinner. Save the planet a little.',
+      consumerH3: 'Find dinner. Save the planet.',
       consumerP: "Open the app, see what nearby restaurants have rescued today, pick a bag, and walk over to collect it. You usually pay between ₸600 and ₸2,000 for food that originally cost two or three times that.",
       consumerList: [
         'Browse rescue boxes near you',
@@ -54,7 +54,7 @@ const en = {
       businessList: [
         'List boxes in seconds',
         'Dashboard with daily revenue + reviews',
-        'Direct payouts in Tenge',
+        'Direct payouts in KZT',
         'No upfront cost — we take a small fee per bag',
       ],
       businessLink: 'Learn more about the business side →',
@@ -77,7 +77,7 @@ const en = {
       f3: {
         num: '03',
         h3: "Track what you've actually saved",
-        p: "Every bag you collect adds up — meals rescued, tenge saved, grocery trips skipped. Set your own goals and watch them tick up.",
+        p: "Every bag you collect adds up — meals rescued, KZT saved, grocery trips skipped. Set your own goals and watch them tick up.",
         points: ['Set monthly savings goals', 'Visual progress, no spreadsheets', 'Order history with one-tap receipts'],
       },
       phoneAbout: 'About Ules box',
