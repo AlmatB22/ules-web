@@ -275,7 +275,7 @@ export default function BusinessContent() {
               <p>{ct.p}</p>
             </div>
             <div className="contact-actions">
-              <a href="mailto:partners@ules.kz" className="biz-link biz-link-primary">partners@ules.kz</a>
+              <a href="mailto:admin@ules.business" className="biz-link biz-link-primary">admin@ules.business</a>
               <Link href="/" className="biz-link">{ct.backLink}</Link>
             </div>
           </div>

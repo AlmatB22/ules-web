@@ -49,18 +49,15 @@ export default function Footer({ variant = 'consumer' }: FooterProps) {
               <div className="footer-col">
                 <div className="footer-h">{f.partnersCol}</div>
                 <Link href="/business">{f.forRestaurants}</Link>
-                <a href="mailto:partners@ules.kz">partners@ules.kz</a>
+                <a href="mailto:admin@ules.business">admin@ules.business</a>
               </div>
             </>
           )}
 
           <div className="footer-col">
             <div className="footer-h">{f.contactCol}</div>
-            <a href="mailto:hello@ules.kz">hello@ules.kz</a>
-            {isBusiness
-              ? <a href="mailto:partners@ules.kz">partners@ules.kz</a>
-              : <a href="#team">{f.team}</a>
-            }
+            <a href="mailto:admin@ules.business">admin@ules.business</a>
+            {!isBusiness && <a href="#team">{f.team}</a>}
           </div>
           <div className="footer-col">
             <div className="footer-h">{f.legalCol}</div>
