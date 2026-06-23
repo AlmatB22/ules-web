@@ -4,11 +4,11 @@ import { Fragment } from 'react'
 import Link from 'next/link'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
-import BizPhoneScreen from '@/components/BizPhoneScreen'
 import { useLanguage } from '@/context/LanguageContext'
 
 export default function BusinessContent() {
-  const { t } = useLanguage()
+  const { t, locale } = useLanguage()
+  const dir = locale === 'en' ? 'eng' : locale
   const b = t.business
   const bh = b.hero
   const hw = b.how
@@ -16,31 +16,6 @@ export default function BusinessContent() {
   const pr = b.pricing
   const fq = b.faq
   const ct = b.contact
-
-  const phoneLabels = {
-    location: bh.phoneLocation,
-    cafeteria: bh.phoneCafeteria,
-    pending: bh.phonePending,
-    todayStatus: bh.phoneTodayStatus,
-    todayInfo: bh.phoneTodayInfo,
-    todayCta: bh.phoneTodayCta,
-    completed: bh.phoneCompleted,
-    orderReq: bh.phoneOrderReq,
-    revenue: bh.phoneRevenue,
-    revLabel: bh.phoneRevLabel,
-    seeDetails: bh.phoneSeeDetails,
-    daily: bh.phoneDaily,
-    weekly: bh.phoneWeekly,
-    monthly: bh.phoneMonthly,
-    ratings: bh.phoneRatings,
-    seeAll: bh.phoneSeeAll,
-    ratingsFrom: bh.phoneRatingsFrom,
-    popular: bh.phonePopular,
-    item1: bh.phoneItem1,
-    item1Sold: bh.phoneItem1Sold,
-    item2: bh.phoneItem2,
-    item2Sold: bh.phoneItem2Sold,
-  }
 
   return (
     <>
@@ -79,17 +54,7 @@ export default function BusinessContent() {
 
           <div className="hero-phone-wrap">
             <div className="phone phone-tilt phone-biz">
-              <div className="phone-notch" />
-              <div className="phone-screen biz-phone-screen">
-                <BizPhoneScreen labels={phoneLabels} />
-              </div>
-              <div className="phone-tabbar">
-                <div className="phone-tab phone-tab-on" />
-                <div className="phone-tab" />
-                <div className="phone-tab phone-tab-add" />
-                <div className="phone-tab" />
-                <div className="phone-tab" />
-              </div>
+              <img src={`/screens/biz/${dir}/home.png`} alt="Ules Business dashboard screen" className="phone-screenshot" />
             </div>
             <div className="phone-float phone-float-sm">
               <div className="pf-row">
@@ -152,44 +117,7 @@ export default function BusinessContent() {
             </div>
             <div className="feat-mock">
               <div className="phone phone-static">
-                <div className="phone-notch" />
-                <div className="phone-screen">
-                  <div className="biz-list-head">
-                    <div className="biz-list-back" />
-                    <div className="ps-h ps-h-big-sm">{db.phoneMyFoodList}</div>
-                  </div>
-                  <div className="biz-list-tabs">
-                    <div className="biz-list-tab biz-list-tab-on">{db.phoneAll}</div>
-                    <div className="biz-list-tab">{db.phoneSalty}</div>
-                    <div className="biz-list-tab">{db.phoneSweet}</div>
-                  </div>
-                  <div className="biz-list-count">{db.phoneTotal}</div>
-                  {[
-                    { price: '₸3,000', tag: db.phoneSalty, w: '60%' },
-                    { price: '₸3,000', tag: db.phoneSweet, w: '60%' },
-                    { price: '₸5,000', tag: db.phoneSweet, w: '65%' },
-                  ].map((item, i) => (
-                    <div className="biz-list-row" key={i}>
-                      <div className="biz-list-thumb" />
-                      <div style={{ flex: 1 }}>
-                        <div className="ps-line ps-line-strong" style={{ width: item.w }} />
-                        <div className="biz-list-pill biz-list-pill-salty">{item.tag}</div>
-                        <div className="ps-line" style={{ width: '50%' }} />
-                      </div>
-                      <div className="biz-list-meta">
-                        <div className="biz-list-dots">⋯</div>
-                        <div className="biz-list-price">{item.price}</div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-                <div className="phone-tabbar">
-                  <div className="phone-tab" />
-                  <div className="phone-tab phone-tab-on" />
-                  <div className="phone-tab phone-tab-add" />
-                  <div className="phone-tab" />
-                  <div className="phone-tab" />
-                </div>
+                <img src={`/screens/biz/${dir}/list.png`} alt={db.phoneMyFoodList} className="phone-screenshot" />
               </div>
             </div>
           </div>
@@ -205,17 +133,7 @@ export default function BusinessContent() {
             </div>
             <div className="feat-mock">
               <div className="phone phone-static">
-                <div className="phone-notch" />
-                <div className="phone-screen">
-                  <BizPhoneScreen labels={phoneLabels} variant="analytics" />
-                </div>
-                <div className="phone-tabbar">
-                  <div className="phone-tab phone-tab-on" />
-                  <div className="phone-tab" />
-                  <div className="phone-tab phone-tab-add" />
-                  <div className="phone-tab" />
-                  <div className="phone-tab" />
-                </div>
+                <img src={`/screens/biz/${dir}/revenue.png`} alt="Ules Business revenue analytics screen" className="phone-screenshot" />
               </div>
             </div>
           </div>
