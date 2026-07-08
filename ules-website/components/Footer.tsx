@@ -61,9 +61,9 @@ export default function Footer({ variant = 'consumer' }: FooterProps) {
           </div>
           <div className="footer-col">
             <div className="footer-h">{f.legalCol}</div>
-            <a href="#" title="Coming soon">{f.terms}</a>
+            <Link href="/legal/terms/">{f.terms}</Link>
             <a href="#" title="Coming soon">{f.privacy}</a>
-            <a href="#" title="Coming soon">{f.payment}</a>
+            <Link href="/legal/payment/">{f.payment}</Link>
           </div>
         </div>
         <div className="footer-bottom">

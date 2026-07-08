@@ -987,3 +987,56 @@ img { display: block; max-width: 100%; }
   .nav-lang-desktop { display: none; }
   .nav-mobile-lang { display: flex; }
 }
+
+/* ─── LEGAL DOCUMENTS (terms, payment rules, …) ─────────────── */
+.legal-doc {
+  background: var(--surface);
+  padding: 48px 24px 80px;
+}
+.legal-wrap {
+  max-width: 780px;
+  margin: 0 auto;
+}
+.legal-back {
+  display: inline-block;
+  margin-bottom: 28px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-2);
+  text-decoration: none;
+}
+.legal-back:hover { color: var(--teal-dark); }
+.legal-article {
+  color: var(--text-1);
+  font-size: 15.5px;
+  line-height: 1.7;
+}
+.legal-title {
+  font-size: clamp(26px, 4vw, 34px);
+  font-weight: 800;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  margin-bottom: 32px;
+}
+.legal-h2 {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1.35;
+  margin: 40px 0 14px;
+  padding-top: 8px;
+}
+.legal-h3 {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--text-1);
+  margin: 26px 0 8px;
+}
+.legal-p {
+  color: var(--text-2);
+  margin: 0 0 14px;
+}
+
+@media (max-width: 600px) {
+  .legal-doc { padding: 32px 18px 60px; }
+  .legal-article { font-size: 15px; }
+}
