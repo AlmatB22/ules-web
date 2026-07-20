@@ -643,6 +643,8 @@ img { display: block; max-width: 100%; }
 .footer-h { font-size: 11px; font-weight: 700; letter-spacing: 1.4px; text-transform: uppercase; color: rgba(255,255,255,0.4); margin-bottom: 4px; }
 .footer-col a { font-size: 14px; color: rgba(255,255,255,0.75); transition: color 0.15s; }
 .footer-col a:hover { color: white; }
+.footer-cards { display: flex; align-items: center; gap: 8px; }
+.footer-cards img { height: 24px; width: auto; background: #fff; border-radius: 4px; padding: 3px 6px; }
 .footer-bottom { display: flex; justify-content: space-between; align-items: center; padding-top: 28px; font-size: 13px; color: rgba(255,255,255,0.45); gap: 16px; flex-wrap: wrap; }
 
 /* ─── RICH PHONE SCREEN MOCKUPS ─────────────────────────────────────────────── */
@@ -1034,6 +1036,21 @@ img { display: block; max-width: 100%; }
 .legal-p {
   color: var(--text-2);
   margin: 0 0 14px;
+}
+.legal-link {
+  color: var(--teal-dark);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.legal-cards {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin: 0 0 28px;
+}
+.legal-cards img {
+  height: 30px;
+  width: auto;
 }
 
 @media (max-width: 600px) {

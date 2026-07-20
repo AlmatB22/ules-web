@@ -64,10 +64,15 @@ export default function Footer({ variant = 'consumer' }: FooterProps) {
             <Link href="/legal/terms/">{f.terms}</Link>
             <Link href="/legal/privacy/">{f.privacy}</Link>
             <Link href="/legal/payment/">{f.payment}</Link>
+            <Link href="/legal/payments/">{f.paymentMethods}</Link>
           </div>
         </div>
         <div className="footer-bottom">
           <span>{f.copyright}</span>
+          <span className="footer-cards">
+            <img src="/payments/visa.png" alt="Visa" />
+            <img src="/payments/mastercard.png" alt="Mastercard" />
+          </span>
           <span className="footer-soft">{f.languages}</span>
         </div>
       </div>
