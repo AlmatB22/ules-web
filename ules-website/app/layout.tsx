@@ -1,7 +1,10 @@
 import type { Metadata } from 'next'
 import { DM_Sans } from 'next/font/google'
+import Script from 'next/script'
 import { LanguageProvider } from '@/context/LanguageContext'
 import './globals.css'
+
+const GA_MEASUREMENT_ID = 'G-KJGHSC8RSL'
 
 const dmSans = DM_Sans({
   subsets: ['latin'],
@@ -29,6 +32,19 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="ru" suppressHydrationWarning>
       <body className={dmSans.className}>
         <LanguageProvider>{children}</LanguageProvider>
+        {/* Google tag (gtag.js) */}
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_MEASUREMENT_ID}');
+          `}
+        </Script>
       </body>
     </html>
   )
