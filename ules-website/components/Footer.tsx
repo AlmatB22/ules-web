@@ -65,6 +65,7 @@ export default function Footer({ variant = 'consumer' }: FooterProps) {
             <Link href="/legal/privacy/">{f.privacy}</Link>
             <Link href="/legal/payment/">{f.payment}</Link>
             <Link href="/legal/payments/">{f.paymentMethods}</Link>
+            <Link href="/legal/account-deletion/">{f.accountDeletion}</Link>
           </div>
         </div>
         <div className="footer-bottom">

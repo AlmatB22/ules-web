@@ -1053,7 +1053,128 @@ img { display: block; max-width: 100%; }
   width: auto;
 }
 
+/* Blocks used by the account-deletion page (steps, tables, callouts). */
+.legal-lede {
+  color: var(--text-2);
+  font-size: 15px;
+  line-height: 1.6;
+  margin: -20px 0 28px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid var(--border);
+}
+.legal-steps {
+  counter-reset: legal-step;
+  list-style: none;
+  padding: 0;
+  margin: 18px 0 22px;
+}
+.legal-steps li {
+  counter-increment: legal-step;
+  position: relative;
+  padding-left: 44px;
+  margin-bottom: 14px;
+  color: var(--text-2);
+}
+.legal-steps li::before {
+  content: counter(legal-step);
+  position: absolute;
+  left: 0;
+  top: 1px;
+  width: 30px;
+  height: 30px;
+  border-radius: 9px;
+  background: var(--teal);
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.legal-ul {
+  margin: 12px 0 14px;
+  padding-left: 20px;
+  color: var(--text-2);
+}
+.legal-ul li { margin-bottom: 8px; }
+.legal-note {
+  background: #FEF3F2;
+  border: 1px solid rgba(239, 68, 68, 0.22);
+  border-radius: 14px;
+  padding: 16px 20px;
+  margin: 20px 0;
+}
+.legal-note p { margin: 0; color: var(--text-2); }
+.legal-note strong { color: #B42318; }
+.legal-card {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 18px 20px;
+  margin: 20px 0;
+}
+.legal-card > :first-child { margin-top: 0; }
+.legal-card > :last-child { margin-bottom: 0; }
+.legal-table-wrap { margin: 16px 0 24px; }
+.legal-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+.legal-table th,
+.legal-table td {
+  text-align: left;
+  padding: 11px 12px 11px 0;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+.legal-table th {
+  font-size: 12.5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-3);
+}
+.legal-table td { color: var(--text-2); }
+.legal-table td:first-child { color: var(--text-1); font-weight: 600; width: 34%; }
+.legal-address {
+  color: var(--text-2);
+  margin: 0 0 14px;
+  line-height: 1.8;
+}
+.legal-footnote {
+  margin: 40px 0 0;
+  padding-top: 22px;
+  border-top: 1px solid var(--border);
+  font-size: 14px;
+  color: var(--text-3);
+}
+
 @media (max-width: 600px) {
   .legal-doc { padding: 32px 18px 60px; }
   .legal-article { font-size: 15px; }
+  .legal-steps li { padding-left: 38px; }
+  .legal-steps li::before { width: 26px; height: 26px; font-size: 14px; border-radius: 8px; }
+  /* Two-column tables stack: the first cell is already the row's label. */
+  .legal-table thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+  .legal-table,
+  .legal-table tbody,
+  .legal-table tr,
+  .legal-table td {
+    display: block;
+    width: 100%;
+  }
+  .legal-table tr {
+    border-bottom: 1px solid var(--border);
+    padding: 12px 0;
+  }
+  .legal-table td { border: 0; padding: 0; }
+  .legal-table td:first-child { width: auto; margin-bottom: 4px; }
 }
